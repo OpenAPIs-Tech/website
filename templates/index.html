@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OpenAPIs</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  
+  <!-- Favicons -->
+  <link href="{{ url_for('static',filename='assets/img/wie_logo.png') }}" rel="icon">
+  <link href="{{ url_for('static',filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  
+  <link href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/venobox/venobox.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static',filename='assets/css/style.css') }}" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/bbec4931e5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-inner-pages">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo --> 
+        <!--#6A2689-->
+        <!-- <h1 class="text-light"><a href="index.html" class="scrollto"><span>IEEE WIE VIT</span></a></h1> -->
+        <a href="{{ url_for('index') }}" class="scrollto"><img src="{{ url_for('static',filename='static/assets/img/wie vit.jpg') }}" alt="" class="img-fluid"></a>
+      </div>
+      
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="{{ url_for('errorpage') }}">Blogs</a></li>
+          <li><a href="{{ url_for('errorpage') }}"v>Newsletter</a></li>
+          <!-- <li><a href="#newsl">Newsletter</a></li> -->
+          <li><a href="{{ url_for('errorpage') }}">Goals</a></li>
+          <li><a href="#features">Team</a></li>
+<!--           <li><a href="https://forms.gle/cT4nJ8DRdNiHxWZMA" target="_blank" class=".modal-button">Recruitments</a></li> -->
+          <!-- <li><a href="#footer">Contact Us</a></li> -->
+          
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-12 intro-info order-md-first order-last">
+          <h2 class="animate__animated animate__bounceInUp" id="hero_animated_heading">
+            OpenAPIs<br> An Open Source Platform<br> VIT</h2>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="chevron-btn container">
+      <a href="#about" class="btn-hero-arrow scrollto"><i class="fa fa-chevron-down" aria-hidden="true"></i></a> 
+
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container">
+        <div class="row">
+
+          <!-- <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+              
+              <img src="{{ url_for('static',filename='assets/img/about us.jpg') }}" alt="">
+            </div>
+          </div> -->
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <h3>Empowering developers In Engineering.</h3>
+              <!-- <p>IEEE Women in Engineering is an organization dedicated to uplifting women engineers and scientists.</p> 
+             <p>Our main goal is to provide a support system for women through our professional endeavors and inspire each other to follow our academic interests and goals. Here at IEEE-WIE, we elevate, motivate, and educate our fellow sisters to achieve our ambitions and dreams!</p>  -->
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Open Source APIs</h3>
+          <p>Take a look at some of our APIs.
+
+          </p>
+        </header>
+
+        <div class="row">
+
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="event-icon-image" style="background: maroon;">
+                <!-- <i class="fa fa-laptop" aria-hidden="true" style="color: #fff;"></i> -->
+    
+               <!-- <img src="assets/img/wie hack poster 2 (3).jpg" class="img-fluid" style="width:auto;height:10%;"> -->
+               <img src="{{ url_for('static',filename='assets/img/wie hack poster 2 (3).jpg') }}" class="img-fluid" style="width:auto;height:10%;">
+
+              </div>
+              <h4 class="title"><a href="">Resume Building API</a></h4>
+              <!-- <p class="description">WIE organised a hackathon in assocuiation with select school of VIT and honeywell.</p> -->
+              <p class="description">API will provide pdf in base64 as API response which can be used to render it in any UI facing technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="event-icon-image" style="background: pink;">
+                
+                <img src="{{ url_for('static',filename='assets/img/wie hack poster 2 (3).jpg') }}" class="img-fluid" style="width:75%;height:60%;">
+                <!-- <i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i> -->
+              </div>
+              <h4 class="title"><a href="">URL Generator</a></h4>
+              <p class="description">This API will generate url from image file.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+        <!-- ======= Call To Action Section/Upcoming events section ======= -->
+
+        <!--  End Call To Action Section -->
+    
+    
+    
+   <!--Page Wrapper-->
+    <section id="blogs" div class="page-wrapper">
+      
+      <!--Post Slider-->
+      
+      <!-- // Post Slider-->
+    </section>
+   <!-- // Page Wrapper-->
+
+    <!-- ======= Newsletter Section ======= -->
+   <section id="newsl" class="services section-bg">
+    
+  </section>
+
+  <!--  End Call To Newsletter Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <!-- End Why Us Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">About OpenAPIs</h3>
+            <p class="cta-text"> Our initiative to provide APIs for developers to leverage the build code and make new products out of it.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" target="_blank" href="https://github.com/OpenAPIs-Tech">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!--  End Call To Action Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Guiding Light</h3>
+          <p>Meet Our Guiding lights who are always there when we need help.</p>
+        </header>
+
+<div class="row feature-item justify-content-center" style="text-align: center;">
+  <!-- <div class="col-lg-4 col-md-6 wow fadeInUp">
+    <div class="member"> -->
+      <!-- Need picture of himanshu without open to work written -->
+      <!-- <img src="{{ url_for('static',filename='assets/img/team/himanshu.jpg') }}" class="img-fluid" alt="" style="width:70%;height:auto;">
+      <div class="member-info">
+        <div class="member-info-content">
+          <h4>Himanshu Singh</h4>
+          <span>Himanshu Singh, BDIPlus</span>
+          <div class="social">
+            <a href="mailto:emadk3@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="col-lg-4 col-md-6 wow fadeInUp">
+    <div class="member">
+      
+      <img src="{{ url_for('static',filename='assets/img/team/kamran.jfif') }}" class="img-fluid" alt="" style="width:65%;height:auto;">
+      <div class="member-info">
+        <div class="member-info-content">
+          <h4>Syed Kamran Ahmad</h4>
+          <span>Software Engineer, Nooble</span>
+          <div class="social">
+            <a href="mainto:emadk3@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+      </div>
+    </section>
+
+    <!-- End Features Section -->
+
+   
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p><i>We believe that The way to success is by working together.</i></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{ url_for('static',filename='assets/img/team/emad.jfif') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Emad</h4>
+                  <span>Maintainer</span>
+                  <div class="social">
+                    <a target="_blank" href="https://www.linkedin.com/in/emad-raza-khan-22244438/"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/emadrk"><i class="fa fa-github"></i></a>
+
+                    <!-- <a href=""><i class="fa fa-github"></i></a> -->
+                    <!-- <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a> -->
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="{{ url_for('static',filename='assets/img/team/mobi.jfif') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Mobashshir</h4>
+                  <span>Maintainer</span>
+                  <div class="social">
+                    <a target="_blank" href="https://www.linkedin.com/in/alam-mobashshir/"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+<!--     
+    <div class="popup-body">
+  
+
+      <div class="container-modal"></div>
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-left">
+            <h1 class="modal-title">OpenAPIs is hiring!!</h1>
+            <p class="modal-desc">We need maintainers of OpenAPIs</p>
+            <div class="input-block">
+            <button class="input-button"><a href="https://forms.gle/cT4nJ8DRdNiHxWZMA" style="color:white">Go to recruitments</a></button>  
+            </div>
+            
+            <div class="modal-buttons">
+              
+              
+            </div>
+            <p class="sign-up"></a></p>
+          </div>
+          <div class="modal-right">
+            <img src="assets/img/404/undraw_enter_uhqk.svg" alt="">
+    
+          </div>
+          <button class="icon-button close-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+      </svg>
+            </button>
+        </div>
+        
+      </div>
+        
+      </div> -->
+
+  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- End  Footer -->
+
+  <!-- modal -->
+
+
+  
+
+<!--modal -->
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static',filename='assets/vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/counterup/counterup.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/venobox/venobox.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/mobile-nav/mobile-nav.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/wow/wow.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/waypoints/jquery.waypoints.min.js') }}"></script>
+
+
+<!--Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static',filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
